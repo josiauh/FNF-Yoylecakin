@@ -44,6 +44,13 @@ class GameplaySettingsSubState extends BaseOptionsMenu
 			'noReset',
 			'bool');
 		addOption(option);
+		#if HIDE_BOTPLAY
+		var option:Option = new Option('Hide Autoplay',
+			"hide the fact you SUCK",
+			'iSuck',
+			'bool');
+		addOption(option);
+		#end
 
 		var option:Option = new Option('Hitsound Volume',
 			'Funny notes does \"Tick!\" when you hit them.',

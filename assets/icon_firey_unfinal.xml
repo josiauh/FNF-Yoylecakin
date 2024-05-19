@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="icon_firey_unfinal.png">
+	<!-- Created with Adobe Animate version 22.0.0.93 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="icon instance 10000" x="0" y="0" width="160" height="185"/>
+	<SubTexture name="icon instance 10001" x="160" y="0" width="160" height="185"/>
+</TextureAtlas>

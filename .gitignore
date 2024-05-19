@@ -12,6 +12,10 @@ export/*
 .github/
 *.code-workspace
 vs_Community.exe
+# some other stuff
+test.log
+*.hxproj
+modsList.txt
 # Local history which shouldn't be shared.
 .history
 .ionide
@@ -23,3 +27,5 @@ vs_Community.exe
 !.vscode/extensions.json
 art/build_html.bat
 art/build_html-debug.bat
+# FLAs
+RECOVER_*.fla

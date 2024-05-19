@@ -27,6 +27,7 @@ class OutdatedState extends MusicBeatState
 
 	override function update(elapsed:Float)
 	{
+		leftState = true;
 		if(!leftState) {
 			if (controls.ACCEPT) {
 				leftState = true;

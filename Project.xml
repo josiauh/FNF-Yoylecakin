@@ -2,7 +2,7 @@
 <project>
 	<!-- _________________________ Application Settings _________________________ -->
 
-	<app title="Friday Night Funkin': Psych Engine" file="PsychEngine" packageName="com.shadowmario.psychengine" package="com.shadowmario.psychengine" main="Main" version="0.2.8" company="ShadowMario" />
+	<app title="Friday Night Funkin': Yoylecakin'!" file="Yoylecakin" packageName="com.freesmart.yoylecakin" package="com.freesmart.yoylecakin" main="Main" version="0.2.8" company="Freesmart" />
 
 	<!--Switch Export with Unique ApplicationID and Icon-->
 	<set name="APP_ID" value="0x0100f6c013bbc000" />
@@ -24,13 +24,14 @@
 	<define name="HSCRIPT_ALLOWED" if="desktop" />
 	<define name="LUA_ALLOWED" if="desktop" />
 	<define name="ACHIEVEMENTS_ALLOWED" />
-	<define name="DISCORD_ALLOWED" />
+	<define name="DISCORD_ALLOWED"/>
 	<define name="PSYCH_WATERMARKS"/> <!-- DELETE THIS TO REMOVE WATERMARKS/DEV NAMES ON TITLE SCREEN -->
+	<define name="HIDE_BOTPLAY"/> <!-- DELETE THIS TO HAVE PEOPLE EXPOSE HOW TRASH THEY ARE -->
 
 	<section if="officialBuild">
 		<define name="TITLE_SCREEN_EASTER_EGG"/>
-		<define name="VIDEOS_ALLOWED" if="windows || linux || android" unless="32bits"/> <!-- IF YOU WANT TO USE VIDEOS ON YOUR SOURCE MOD, GET THIS LINE OUTSIDE OF THE SECTION -->
 	</section>
+	<define name="VIDEOS_ALLOWED" if="windows || linux || android" unless="32bits"/> <!-- SNATCH! -->
 
 	<!-- ____________________________ Window Settings ___________________________ -->
 
@@ -71,6 +72,9 @@
 	<assets path="assets/songs"         library="songs"         exclude="*.mp3" unless="web"/>
 	<assets path="assets/week_assets"   library="week_assets"   rename="assets" exclude="*.ogg" if="web"/>
 	<assets path="assets/week_assets"   library="week_assets"   rename="assets" exclude="*.mp3" unless="web"/>
+	<assets path="assets/scripts"       library="scripts"  rename="mods/scripts" exclude="*.ogg" if="web"/>
+	<assets path="assets/scripts"       library="scripts"  rename="mods/scripts" exclude="*.mp3" unless="web"/>
+	<assets path="assets/events"       library="events"  rename="mods/custom_events" exclude="*.mp3" unless="web"/>
 	<section if="TITLE_SCREEN_EASTER_EGG">
 		<assets path="assets/secrets" rename="assets/shared" exclude="*.ogg" if="web"/>
 		<assets path="assets/secrets" rename="assets/shared" exclude="*.mp3"  unless="web"/>
